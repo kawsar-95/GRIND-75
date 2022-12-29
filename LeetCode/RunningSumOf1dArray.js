@@ -31,9 +31,9 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var runningSum = function (nums) {
+const runningSum = (nums) => {
 
-  var output = [nums[0]];        // tip: initialize like let output = [nums?.[0] ?? 0];
+  let output = [nums[0]];        // tip: initialize like let output = [nums?.[0] ?? 0];
   for (let i = 1; i < nums.length; i++) {
     nums[i] = nums[i] + nums[i - 1];
     output.push(nums[i]);

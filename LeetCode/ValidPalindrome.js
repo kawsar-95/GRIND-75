@@ -36,7 +36,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isPalindrome = function (str) {
+const isPalindrome = (str) => {
   arr = str.split('')
   let result = []
   let alphabet = '0123456789abcdefghijklmnopqrstuvwxyz'

@@ -10,7 +10,7 @@
  * @param {TreeNode} root
  * @return {TreeNode}
  */
-function invertTree(root) {
+const invertTree = (root) => {
   if (root == null) {
     return root
   }

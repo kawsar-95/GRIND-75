@@ -20,7 +20,7 @@
  * @param {number[]} nums
  * @return {boolean}
  */
-function containsDuplicate(nums) {
+const containsDuplicate = (nums) => {
   let memory = {};
   for (i = 0; i < nums.length; i++) {
     if (memory[nums[i]] === undefined) {

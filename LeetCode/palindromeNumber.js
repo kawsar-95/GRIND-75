@@ -33,7 +33,7 @@
  * @param {number} x
  * @return {boolean}
  */
-const isPalindrome = function (x) {
+const isPalindrome = (x) => {
   let reversedString = x.toString().split('').reverse().join('')
   return (x.toString() === reversedString)
 
