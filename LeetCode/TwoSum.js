@@ -33,17 +33,19 @@
 
 
 
-
+// BruteForce
 const twoSum = (array, goal) => {
-  let indexes = [];
+    let indexes = [];
 
-  for (let i = 0; i < array.length; i++) {
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[i] + array[j] === goal) {
-        indexes.push(i);
-        indexes.push(j);
-      }
+    for (let i = 0; i < array.length; i++) {
+        for (let j = i + 1; j < array.length; j++) {
+            if (array[i] + array[j] === goal) {
+                indexes.push(i);
+                indexes.push(j);
+            }
+        }
     }
-  }
-  return indexes;
+    return indexes;
 }
+
+// Solve with Hash Table
